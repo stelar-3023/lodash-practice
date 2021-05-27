@@ -8,28 +8,28 @@ var _ = require("lodash");
 // Impure Functions change the state of received objects - Impure functions have side effects.
 
 // Examples
-const pureAdd = (num1, num2) => {
-  return num1 + num2;
-};
+// const pureAdd = (num1, num2) => {
+//   return num1 + num2;
+// };
 
-//always returns same result given same inputs
-pureAdd(5, 5);
-//10
-pureAdd(5, 5);
-//10
+// //always returns same result given same inputs
+// pureAdd(5, 5);
+// //10
+// pureAdd(5, 5);
+// //10
 
-//IMPURE FUNCTION
-let plsMutateMe = 0;
-const impureAdd = (num) => {
-  return (plsMutateMe += num);
-};
+// //IMPURE FUNCTION
+// let plsMutateMe = 0;
+// const impureAdd = (num) => {
+//   return (plsMutateMe += num);
+// };
 
-//returns different result given same inputs
-impureAdd(5);
-//5
-impureAdd(5);
-//10
-console.log(plsMutateMe)
+// //returns different result given same inputs
+// impureAdd(5);
+// //5
+// impureAdd(5);
+// //10
+// console.log(plsMutateMe);
 
 // Array Functions
 
@@ -112,3 +112,51 @@ console.log(plsMutateMe)
 // console.log(unique);
 
 // Collection Functions
+// let array = _.forEach({ name: "Steve", age: 45 }, function (value, key) {
+//   console.log(value);
+// });
+
+// let test = _.every([true, 1, null, "yes"], Boolean);
+// console.log(test);
+
+// let users = [
+//   { user: "Steve", age: 47, active: true },
+//   { user: "Dawn", age: 52, active: false },
+//   { user: "Anthony", age: 33, active: true },
+// ];
+// let other = _.find(users, function (n) {
+//   return n.age > 50;
+// });
+// console.log(other);
+
+// let array = [1, 1, 3, 4, 5, 9, 9, 7];
+// let other = _.flatMap(array, function duplcate(n) {
+//   return [n, n, n];
+// });
+// console.log(other);
+
+// console.log(_.groupBy([2.5, 4.4, 8.9], Math.floor))
+
+// let array = [1, 2, 4, "Dawn"];
+// let other = _.includes(array, "Dawn");
+// console.log(other);
+
+// let users = [{ user: "Steve" }, { user: "Dawn" }, { user: "Dave" }];
+// let other = _.map(users, "user")
+// console.log(other);
+
+// let users = [{ user: "Steve" }, { user: "Dawn" }, { user: "Dave" }, {"user": "Brookelynn"}, {"user": "Vince"}];
+// let other = _.orderBy(users, ["user"], ["desc"])
+// console.log(other)
+
+// let users = [{ user: "Steve" }, { user: "Dawn" }, { user: "Dave" }, {"user": "Brookelynn"}, {"user": "Vince"}];
+// let other = _.sortBy(users, "user")
+// console.log(other)
+
+// let array = [1, 2, 3, 4, 5, 6];
+// let other = _.reduce(array, function (sum, n) {
+//   return sum * n;
+// });
+// console.log(other)
+
+// String Functions
