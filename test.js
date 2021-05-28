@@ -80,9 +80,9 @@ var _ = require("lodash");
 //   { name: "Dawn", age: 51 },
 // ];
 // let other = _.head(array);
+// console.log(other);
 // let other2 = _.last(array);
 // console.log(other2);
-// console.log(other);
 
 // let array = ['a', 'b', 'c', 'd']
 // let other = _.nth(array, 2)
@@ -160,3 +160,79 @@ var _ = require("lodash");
 // console.log(other)
 
 // String Functions
+
+// let string = "queen of-hearts";
+// let other = _.camelCase(string);
+// console.log(other);
+
+// let string = "STEVE"
+// let other = _.capitalize(string)
+// console.log(other);
+
+// let string = "QueenOfHearts";
+// let other = _.kebabCase(string);
+// console.log(other);
+
+// let string = "QueenOfHearts";
+// let other = _.lowerCase(string)
+// console.log(other);
+
+// let string = "Steve"
+// let other = _.lowerFirst(string)
+// console.log(other);
+
+// let string = "steve"
+// let other = _.upperFirst(string)
+// console.log(other)
+
+// let string = "queenOfHearts"
+// let other = _.snakeCase(string)
+// console.log(other)
+
+// let string = "Steve";
+// let other = _.startsWith(string, "S");
+// console.log(other);
+
+// let string = "  Dawn  "
+// let other = _.trim(string)
+// console.log(other);
+
+// let string = "_string_"
+// let other = _.trimEnd(string, "_")
+// console.log(other);
+
+// let string = "_string_"
+// let other = _.trimStart(string, "_")
+// console.log(other);
+
+// let string = "Steve"
+// let other = _.pad(string, 12, "-")
+// console.log(other)
+
+// let string = "Steve"
+// let other = _.padEnd(string, 8, "-")
+// console.log(other)
+
+// let string = "Steve"
+// let other = _.padStart(string, 8, "-")
+// console.log(other)
+
+// let string = "six > five";
+// let other = _.escape(string);
+// console.log(other);
+
+// let string = "six &gt; five";
+// let other = _.unescape(string);
+// console.log(other);
+
+// let string = "Steve, Dawn, and Anthony";
+// let other = _.words(string);
+// console.log(other);
+
+// let string =
+//   "The Death Star plans are not in the main computer. Where are those transmissions you intercepted? What have you done with those plans? We intercepted no transmissions. Aaah....This is a consular ship. Were on a diplomatic mission. If this is a consular ship...were is the Ambassador? Commander, tear this ship apart until you've found those plans and bring me the Ambassador. I want her alive! There she is! Set for stun! She'll be all right. Inform Lord Vader we have a prisoner.";
+// let other = _.truncate(string, {
+//   "length": 28,
+//   "separator": " "
+// })
+// console.log(other);
